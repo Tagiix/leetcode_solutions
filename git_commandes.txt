@@ -1,0 +1,24 @@
+== GIT - Commandes essentielles pour ce repo ==
+
+--- Ajouter une nouvelle solution ---
+git add <fichier>               # ex: git add 42.trapping-rain-water.cpp
+git commit -m "Add solution 42"
+git push
+
+--- Voir l'état du repo ---
+git status                      # fichiers modifiés / non suivis
+git log --oneline               # historique des commits
+
+--- Modifier une solution déjà commitée ---
+# édite le fichier, puis :
+git add <fichier>
+git commit -m "Fix solution 16"
+git push
+
+--- Ajouter toutes les nouvelles solutions d'un coup ---
+git add .
+git commit -m "Add solutions XX, YY"
+git push
+
+--- Récupérer le repo sur une autre machine ---
+git clone git@github.com:Tagiix/leetcode_solutions.git
